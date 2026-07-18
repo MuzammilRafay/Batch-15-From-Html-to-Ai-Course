@@ -1,0 +1,43 @@
+download vs vode from it's site
+
+https://code.visualstudio.com/
+
+
+https://www.w3schools.com/html/html_intro.asp
+
+
+What is HTML?
+HTML stands for Hyper Text Markup Language
+we can create website using html/css
+
+
+tags
+
+<tagname> = starting tag
+<tagname/> = ending tag / closing tag
+
+
+What is an HTML Element?
+
+
+<tagname> Content goes here... </tagname>
+The HTML element is everything from the start tag to the end tag:
+
+
+
+HTML Attributes
+additional information
+
+
+
+we have two types of elements
+
+block level element
+ye element puri width lega
+
+example:h1,h2,div,p tags
+
+inline-block element
+required jagah ki occupy karta hai
+
+example:img, span
