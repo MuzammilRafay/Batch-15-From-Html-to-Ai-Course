@@ -29,6 +29,34 @@ HTML Attributes
 additional information
 
 
+enable the extension in your windows
+
+https://www.google.com/search?q=how+to+enable+extension+in+windows+11&oq=how+to+enable+extension+in+windows+11&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yCAgCEAAYFhgeMggIAxAAGBYYHjIICAQQABgWGB4yCAgFEAAYFhgeMggIBhAAGBYYHjIICAcQABgWGB4yCAgIEAAYFhgeMggICRAAGBYYHtIBCDM2OThqMGo3qAIAsAIA&sourceid=chrome&source=chrome.ob&ie=UTF-8
+
+
+create index.html
+
+
+<!doctype html>
+<html>
+  <head>
+    <title>second page 1</title>
+  </head>
+
+  <body>
+    <h1>This is a heading one</h1>
+   </body>
+</html>
+
+
+open with vs code
+&
+open this file in browser
+
+
+
+
+
 
 we have two types of elements
 
