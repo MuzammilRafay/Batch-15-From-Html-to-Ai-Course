@@ -1,0 +1,38 @@
+/* sare element ki padding or margin 0 hojaega */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9ff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #004ac6;
+  align-items: center;
+  padding: 0px 15px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li {
+  /* remove bullets */
+  list-style-type: none;
+  color: #434655;
+  font-size: 16px;
+}
+
+.primary-btn {
+  background-color: #004ac6;
+  color: white;
+  border: none;
+  padding: 4px 20px;
+  font-size: 16px;
+}

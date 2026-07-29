@@ -1,0 +1,12 @@
+open figma website
+
+https://figma.com
+
+create your account from continue with google
+
+
+
+
+./resouces/Basic First Layout of Flexbox/Basic First Layout of Flexbox.fig
+drag & drop .fig file from resources folder
+
