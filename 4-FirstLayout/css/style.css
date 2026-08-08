@@ -75,3 +75,95 @@ header nav ul li {
   color: white;
   padding: 10px 40px;
 }
+.about-us-section {
+  gap: 40px;
+}
+
+.our-courses-section {
+  display: block !important;
+  text-align: center;
+}
+
+#courses-parent {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+#courses-parent img {
+  width: 100%;
+  max-width: 48px;
+}
+
+.courses-items {
+  border: 2px solid #004ac6;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: left;
+}
+.courses-items h2 {
+  margin: 20px 0px;
+  color: #121c2a;
+  font-size: 20px;
+}
+
+.courses-items p {
+  color: #434655;
+  font-size: 14px;
+}
+
+.courses-items button {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  color: #004ac6;
+  border: 2px solid #004ac6;
+  width: 100%;
+  margin-top: 20px;
+  padding: 4px 0px;
+}
+.courses-items button:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.our-contact-us-section {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #e6eeff !important;
+}
+
+#contact-us-form {
+  border: 2px solid #c3c6d7;
+  background-color: white;
+  padding: 20px;
+  width: 50%;
+}
+
+.form-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.form-items input {
+  border: 1px solid #d9e3f6;
+  padding: 12px 8px;
+}
+
+.form-items textarea {
+  border: 1px solid #d9e3f6;
+  padding: 12px 8px;
+  resize: none;
+  height: 200px;
+}
+#contact-us-form button {
+  background-color: #004ac6;
+  border: none;
+  width: 100%;
+  padding: 12px 0px;
+  color: white;
+}
