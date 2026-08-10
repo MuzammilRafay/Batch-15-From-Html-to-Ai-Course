@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  padding: 0px 100px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  border-bottom: 1px solid #c3c6d7;
+  margin-bottom: 20px;
+}
+
+#logo img {
+  max-width: 200px;
+}
+header nav ul {
+  display: flex;
+  gap: 20px;
+}
+header nav ul li {
+  list-style: none;
+  font-size: 16px;
+  color: #555f6f;
+  padding-bottom: 3px;
+}
+header nav ul li:hover {
+  color: #004ac6;
+  /* text-decoration: underline; */
+  border-bottom: 2px solid #004ac6;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#sign-in button {
+  padding: 7px 20px;
+  background-color: #004ac6;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+}
