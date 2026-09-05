@@ -195,3 +195,72 @@ header button {
   font-size: 16px;
   font-weight: bold;
 }
+
+#why-choose-us {
+  background-color: var(--bg-color4);
+  padding: 95px 0px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#why-choose-first-p {
+  margin-top: 25px;
+  margin-bottom: 55px;
+  color: var(--text-two);
+  font-size: 16px;
+}
+
+#parent-why-choose-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+#why-choose-us h2 {
+  font-size: 32px;
+  color: var(--text-three);
+}
+
+.why-choose-items {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 50px;
+}
+.why-choose-items img {
+  width: 64px;
+  margin-bottom: 20px;
+}
+
+.why-choose-items h4 {
+  color: var(--text-three);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.why-choose-items p {
+  color: var(--text-two);
+  font-size: 16px;
+}
+
+#counter-container {
+  background-color: var(--primary-color);
+  padding: 40px 0px;
+}
+
+#counter-parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.counter-childs {
+  flex-grow: 1;
+  text-align: center;
+}
+.counter-childs h3 {
+  color: var(--white);
+  font-size: 64px;
+}
+.counter-childs p {
+  color: var(--white);
+  font-size: 14px;
+}
