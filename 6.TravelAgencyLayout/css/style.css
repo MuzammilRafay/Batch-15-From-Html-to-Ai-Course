@@ -264,3 +264,106 @@ header button {
   color: var(--white);
   font-size: 14px;
 }
+
+#tour-package-container {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.common-heading {
+  color: var(--text-three);
+  font-size: 32px;
+}
+.common-paragraph {
+  color: var(--text-two);
+  font-size: 16px;
+}
+
+#tour-packages {
+  display: flex;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.tour-packages-items {
+  flex-grow: 1;
+  border: 1px solid var(--border-color2);
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 17px;
+  text-align: left;
+}
+
+.package-information {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  color: var(--text-two);
+}
+.package-information img {
+  width: 20px;
+}
+.package-name {
+  color: var(--text-three);
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+.package-pricing {
+  margin-bottom: 20px;
+  color: var(--text-two);
+  font-weight: normal;
+}
+.package-pricing span {
+  color: var(--primary-color);
+  font-size: 36px;
+  font-weight: bolder;
+}
+
+.tour-packages-items button {
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  font-size: 16px;
+  color: var(--primary-color);
+  background-color: var(--white);
+  width: 100%;
+  padding: 15px;
+  font-weight: bolder;
+  margin-top: 60px;
+}
+.tour-packages-items button:hover {
+  cursor: pointer;
+}
+.non-active-package-information {
+  opacity: 0.4;
+}
+
+#tour-packages-items-popular {
+  border: 2px solid var(--primary-color);
+  background-color: #e2f0fd;
+  position: relative;
+}
+#tour-packages-items-popular button {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+#most-popular-tag {
+  position: absolute;
+  top: -13px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 15px;
+  /* for centering the item when using absolute property */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#capture-memories-container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+  background-color: var(--bg-color4);
+}
