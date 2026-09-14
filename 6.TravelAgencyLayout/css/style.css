@@ -443,3 +443,35 @@ header button {
   font-size: 16px;
   font-weight: bold;
 }
+
+@media (max-width: 800px) {
+  #sub-header {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .popuplar-destination-container {
+    flex-direction: column;
+  }
+  #parent-why-choose-box {
+    flex-direction: column;
+  }
+  #counter-parent {
+    flex-direction: column;
+  }
+  #tour-packages {
+    flex-direction: column;
+  }
+  #capture-memories-images {
+    flex-direction: column;
+  }
+  #overview h3 {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 430px) {
+  #sub-header nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
