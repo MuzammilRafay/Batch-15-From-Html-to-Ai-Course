@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <style>
+      body {
+        background-color: green;
+      }
+    </style> -->
+  </head>
+  <body>
+    <h1>Hello world</h1>
+    <button>Change Text</button>
+
+    <script>
+      const button = document.querySelector("button");
+
+      button.addEventListener("click", function (event) {
+        event.preventDefault();
+        const h1Element = document.querySelector("h1");
+        h1Element.textContent = "Changed Text";
+      });
+    </script>
+  </body>
+</html>
