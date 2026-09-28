@@ -52,7 +52,8 @@ const developer = {
 };
 
 // console.log(developer);
-// console.log(developer["name"]);
+// console.log(developer["name"]); //Mohsineen
+// console.log(developer.name);
 // console.table(developer);
 
 // let student=0
@@ -129,7 +130,7 @@ function createUser() {
 
 // createUser();
 
-console.log(userName); //it will not work outside of the function
+// console.log(userName); //it will not work outside of the function
 
 // ========================================
 //  BEST PRACTICE
@@ -152,6 +153,7 @@ console.log(currentLesson);
 // ======================================================
 
 // JavaScript is case-sensitive.
+
 const studentname = "asdasd"; //ye alag variable ha
 const studentName = "Ali"; //ye alag vairable ha
 const StudentName = "Ahmed";
@@ -161,10 +163,101 @@ const StudentName = "Ahmed";
 
 // Recommended style: camelcase
 const companyName = "Squad Coders Dev";
-const totalCourseStudents = 20;
+const totalCourseStudentsCount = 20;
 
 // Valid, but less common in JavaScript:
 const company_name = "Squad Coders Dev";
 
 // PascalCase is normally used for classes/components.
 const JavaScriptCourse = "Beginner Course";
+
+// ========================================
+//  REFERENCE COPY PROBLEM
+// ========================================
+
+const originalMarks = {
+  math: 80,
+};
+
+const testVar = originalMarks;
+// const testVar = { ...originalMarks };
+
+testVar.math = 70;
+
+console.log(originalMarks.math); // 70 (wrong it should be 80 because we did not change it)
+console.log(testVar.math); //70
+
+// ========================================
+//  SHALLOW COPY
+// ========================================
+
+// Spread creates a new top-level object.
+
+const musaddiqMarks = {
+  math: 80,
+};
+
+const muzammilMarks = {
+  ...musaddiqMarks,
+};
+
+musaddiqMarks.math = 70;
+
+console.log(musaddiqMarks); // { math: 70 }
+console.log(muzammilMarks); // { math: 80 }
+
+// Array shallow copy
+
+const firstValues = [1, 2, 3];
+const secondValues = [...firstValues];
+
+secondValues.push(4);
+
+console.log(firstValues); // [1, 2, 3]
+console.log(secondValues); // [1, 2, 3, 4]
+
+// ========================================
+// 6. SHALLOW COPY LIMITATION
+// ========================================
+
+// Nested arrays and objects are still shared.
+
+const userA = {
+  name: "John",
+  skills: ["HTML", "CSS", "JavaScript"],
+};
+
+const userB = {
+  ...userA,
+};
+
+userB.skills.push("React"); //add karra hn array me ek or Value "React"
+
+console.log(userA.skills); // React is also added here.
+console.log(userB.skills);
+
+// ========================================
+// 7. DEEP COPY
+// ========================================
+
+// structuredClone creates a complete independent copy.
+
+const developerA = {
+  name: "John",
+  designation: "Developer",
+  skills: ["HTML", "CSS", "JavaScript", "React", "Python", "AI"],
+};
+
+// JSON.parse(JSON.stringify(developer))
+const developerB = structuredClone(developerA);
+
+developerB.skills.push("AI Agents");
+
+console.log(developerA);
+console.log(developerB);
+
+// Older JSON deep-copy method:
+// const developerB = JSON.parse(JSON.stringify(developerA));
+
+// JSON copying does not properly support:
+// undefined, Date, Map, Set, Symbol and functions.
