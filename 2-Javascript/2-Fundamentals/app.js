@@ -180,7 +180,7 @@ const originalMarks = {
 };
 
 const testVar = originalMarks;
-// const testVar = { ...originalMarks };
+// const testVar = { ...originalMarks }; // ... = spread operator
 
 testVar.math = 70;
 
@@ -261,3 +261,112 @@ console.log(developerB);
 
 // JSON copying does not properly support:
 // undefined, Date, Map, Set, Symbol and functions.
+
+// ======================================================
+// 12. TYPE CHECKING
+// ======================================================
+
+const productPrice = "200";
+
+console.log(typeof productPrice); // string
+
+// ======================================================
+// 13. TYPE CONVERSION
+// ======================================================
+
+//string to number
+
+const mousePrice = "200"; //string
+const convertMousePrice = Number(mousePrice); //200 blue color mean
+
+// console.log(mousePrice);
+// console.log(convertMousePrice);
+
+// Decimal string to number
+
+const keyboardPrice = "2.5";
+const convertedKyeboardPrice = Number(keyboardPrice);
+
+// console.log(keyboardPrice + 2); //2.52
+// console.log(convertedKyeboardPrice + 2); //2.52
+
+// parseFloat keeps the decimal part.
+
+console.log(parseFloat("10.9")); // 10.9
+
+// parseInt removes the decimal part.
+
+console.log(parseInt("10.9")); // 10
+
+//Invalid number conversion return Nan
+// Nan stands for not a number
+console.log(Number("asdfsadfasdf")); //Nan
+
+// Value to string
+
+const orderId = 123;
+console.log(String(orderId)); // "123"
+console.log(orderId.toString()); // "123"
+
+// Value to boolean
+
+console.log(Boolean(1)); // true
+console.log(Boolean(0)); // false
+console.log(Boolean("Hello")); // true
+console.log(Boolean("")); // false
+console.log(Boolean(null)); // false
+console.log(Boolean(undefined)); // false
+
+// ======================================================
+// 14. TRUTHY AND FALSY VALUES
+// ======================================================
+// Common falsy values:
+// false, 0, "", null, undefined, NaN
+
+if (true) {
+  console.log("it is true");
+}
+
+if (false) {
+  console.log("it is false");
+}
+
+// ======================================================
+// 16. ARITHMETIC OPERATORS
+// ======================================================
+
+console.log(5 + 5); // addition
+console.log(5 - 5); // subtraction
+console.log(5 * 5); // multiplication
+console.log(5 / 5); // division
+console.log(5 % 2); // remainder
+console.log(2 ** 3); // power
+
+// ======================================================
+// 17. MATH OBJECT
+// ======================================================
+
+console.log(Math.PI);
+console.log(Math.round(2.5)); // 3
+console.log(Math.floor(2.9)); // 2
+console.log(Math.ceil(2.1)); // 3
+console.log(Math.pow(2, 3)); // 8 (2x2x2) = 8
+console.log(Math.min(1, 5, 2, 20, 30, 40)); // 1
+console.log(Math.max(1, 5, 2)); // 5
+
+// Random number from 1 to 20
+
+const randomNumber = Math.floor(Math.random() * 20) + 1;
+
+console.log(randomNumber);
+
+// const h2Element = document.querySelector("h2");
+// h2Element.addEventListener("click", (e) => {
+//   e.preventDefault();
+
+//   if (e.target.innerText === "Javascript Fundamentals") {
+//     e.target.innerText = "Javascript Fundamentals Changed";
+//   } else {
+//     e.target.innerText = "Javascript Fundamentals";
+//   }
+// });
