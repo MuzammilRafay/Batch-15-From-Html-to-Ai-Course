@@ -359,14 +359,112 @@ console.log(Math.max(1, 5, 2)); // 5
 const randomNumber = Math.floor(Math.random() * 20) + 1;
 
 console.log(randomNumber);
+// ======================================================
+// 18. STRINGS
+// ======================================================
 
-// const h2Element = document.querySelector("h2");
-// h2Element.addEventListener("click", (e) => {
-//   e.preventDefault();
+const firstName = "Muzammil";
+const lastName = "Mustaqeem";
 
-//   if (e.target.innerText === "Javascript Fundamentals") {
-//     e.target.innerText = "Javascript Fundamentals Changed";
-//   } else {
-//     e.target.innerText = "Javascript Fundamentals";
-//   }
-// });
+// String concatenation (plus karne ko)
+
+const fullName = firstName + " " + lastName; //Muzammil Mustaqeem
+
+//problem
+
+const fullName2 = firstName + " '\n " + lastName; //Muzammil Mustaqeem
+
+// ======================================================
+// 19. TEMPLATE LITERAL
+// ======================================================
+
+const fullName3 = `${firstName} ${lastName}`;
+console.log(fullName3); //Muzammil Mustaqeem
+
+//line break
+//single quotation4
+
+// ======================================================
+// 20. COMMON STRING METHODS
+// ======================================================
+
+const message = "javascript is easy to LEARN";
+
+console.log(message.toUpperCase()); // JAVASCRIPT IS EASY TO LEARN
+console.log(message.toLowerCase()); //javascript is easy to learn
+console.log(message.includes("easy")); //true
+console.log(message.includes("phone")); //false
+console.log(message.replace("easy", "powerful")); //javascript is powerful to LEARN
+console.log(message.length); //27
+
+// ======================================================
+// 19. COMPARISON OPERATORS
+// ======================================================
+
+// Always prefer strict comparison.
+
+console.log(1 === 1); // true (match/data type bhi same hai)
+console.log(1 === "1"); // false (because type is different)
+console.log(1 !== "1"); // true (because it is checking the type also)
+
+console.log(10 > 5); // true
+console.log(10 < 5); // false
+console.log(10 >= 10); // true
+console.log(5 <= 10); // true
+
+// Avoid loose comparison when possible.
+console.log(1 == "1"); // true because type conversion happens
+console.log(1 != "1"); // false because type conversion happens
+
+// ======================================================
+// 20. IF, ELSE IF, AND ELSE
+// ======================================================
+// const customerLocation = "nazimabad";
+// const customerLocation = "North Karachi";
+// const customerLocation = "Orangi Town";
+
+const customerLocation = "Qaidabad";
+let deliveryCharges = 0;
+
+if (customerLocation === "North Karachi") {
+  deliveryCharges = 90;
+} else if (customerLocation === "Orangi Town") {
+  deliveryCharges = 300;
+} else if (customerLocation === "Qaidabad") {
+  deliveryCharges = 350;
+} else {
+  deliveryCharges = 200;
+}
+
+console.log(customerLocation);
+console.log(deliveryCharges);
+
+// ======================================================
+// 21. LOGICAL OPERATORS
+// ======================================================
+
+// const laptopBrand = "HP";
+const laptopBrand = "DELL";
+const laptopRam = "8GB";
+
+// AND: both conditions must be true.
+
+if (laptopBrand === "HP" && laptopRam === "8GB") {
+  console.log("Buy this laptop");
+} else {
+  console.log("I will not buy this laptop");
+}
+
+// OR: at least one condition must be true.
+
+if (laptopBrand === "HP" || laptopBrand === "Dell") {
+  console.log("Approved brand");
+}
+
+// NOT: reverses a boolean value.
+
+const isOutOfStock = false;
+
+if (!isOutOfStock) {
+  console.log("Product is available");
+}
