@@ -468,3 +468,143 @@ const isOutOfStock = false;
 if (!isOutOfStock) {
   console.log("Product is available");
 }
+
+// ======================================================
+// 22. TERNARY OPERATOR
+// ======================================================
+
+// Best for small conditions.
+
+// syntax:
+
+// condition ? true : false
+
+const purchaseMessage =
+  laptopBrand === "HP" ? "Buy this lapotp" : "Do not buy this laptop";
+
+console.log(purchaseMessage); //"Do not buy this laptop"
+
+// Avoid deeply nested ternary operators.
+// Use if/else for multiple conditions.
+
+// ======================================================
+// 23. SWITCH STATEMENT
+// ======================================================
+
+const color = "blue";
+
+switch (color) {
+  case "red":
+    console.log("Color is red");
+    break;
+
+  case "blue":
+    console.log("Color is blue");
+    break;
+
+  default:
+    console.log("Unkown red");
+}
+
+// ======================================================
+//  FUNCTIONS
+// ======================================================
+
+// A function is reusable code.
+
+function showMessage() {
+  console.log("Hello world");
+  console.log("Hello world");
+  console.log("Hello world");
+  console.log("Hello world");
+  console.log("Hello world");
+}
+
+showMessage(); //call function
+
+// ======================================================
+//  PARAMETERS AND ARGUMENTS
+// ======================================================
+
+function printName(userName) {
+  //you are defining parameter
+  console.log(`My name is ${userName}`);
+}
+
+printName("Ahmed"); //idhr jo dere pass karre ho isko argument
+
+// ======================================================
+//  MULTIPLE PARAMETERS AND ARGUMENTS
+// ======================================================
+function printFullName(firstName, lastName) {
+  console.log(`My full name is ${firstName} ${lastName}`);
+  // console.log("My full name is " + firstName + " " + lastName);
+}
+
+printFullName("Muzammil", "Mustaqeem");
+
+// ======================================================
+//  RETURN VALUE IN FUNCTION
+// ======================================================
+
+function sum(a, b) {
+  // return "John";
+  // return [1, 2, 3, 4];
+  // return { name: "John" };
+  // return true;
+  return a + b;
+  // a + b;
+}
+
+const kk = sum(2, 3); //5
+console.log(kk); //5
+
+// ======================================================
+// DEFAULT PARAMETERS
+// ======================================================
+
+function greetUser(name = "Guest User") {
+  console.log(`Welcome, ${name}`);
+}
+
+greetUser("Ali"); // Welcome, Ali
+greetUser(); //name="Guest User" (Welcome, Guest User)
+
+// ======================================================
+//  REST PARAMETERS
+// ======================================================
+
+function showNumbers(first, second, ...remainingParameters) {
+  // three dot with parameter called rest parameter
+  console.log(first, second, remainingParameters);
+}
+
+showNumbers(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+// ======================================================
+//  FUNCTION EXPRESSION
+// ======================================================
+
+const subtractNumbers = function (firstNumber, secondNumber) {
+  return firstNumber - secondNumber;
+};
+
+console.log(subtractNumbers(10, 4)); //6
+
+// ======================================================
+//  ARROW FUNCTION
+// ======================================================
+
+// () => {} = arrow function
+
+const multiplyNumbers = (a, b) => {
+  return a * b;
+};
+
+console.log(multiplyNumbers(5, 4)); //20
+
+//short arrow function
+
+const multiplyNumbers2 = (a, b) => a * b;
+
+multiplyNumbers(5, 4); //20
