@@ -584,12 +584,15 @@ showNumbers(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 // ======================================================
 //  FUNCTION EXPRESSION
 // ======================================================
+// a peice of code we can execute multiple
 
 const subtractNumbers = function (firstNumber, secondNumber) {
   return firstNumber - secondNumber;
 };
 
 console.log(subtractNumbers(10, 4)); //6
+
+// Math.max(1, 2, 3, 4, 45, 5, 66, 6, 6, 6); //maximum number nikalta hai
 
 // ======================================================
 //  ARROW FUNCTION
@@ -608,3 +611,74 @@ console.log(multiplyNumbers(5, 4)); //20
 const multiplyNumbers2 = (a, b) => a * b;
 
 multiplyNumbers(5, 4); //20
+
+// ======================================================
+//  GLOBAL AND LOCAL VARIABLES
+// ======================================================
+
+const globalValue = 4; //global variable
+
+function calculateGlobalSquare() {
+  return globalValue * globalValue;
+}
+
+console.log(calculateGlobalSquare());
+
+function calculateLocalSquare() {
+  const localValue = 4; //local variable
+  return localValue * localValue;
+}
+
+console.log(calculateLocalSquare());
+// ======================================================
+// 24. DATE OBJECT
+// ======================================================
+
+const today = new Date();
+
+console.log(today);
+console.log(today.getFullYear()); //2026
+console.log(today.getMonth() + 1); //10 // Months start from 0
+console.log(today.getDate()); //14
+console.log(today.getDay()); //3 // Sunday is 0
+console.log(today.getHours()); //20
+console.log(today.getMinutes()); //48
+
+// Safer date format: YYYY-MM-DD
+
+const birthday = new Date("1996-11-27");
+
+console.log(birthday);
+
+// ======================================================
+//  FOR LOOP
+// ======================================================
+
+// A loop repeats code multiple times.
+
+// for( variable; condition; postincrement)
+
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}
+
+// Output:
+// 1
+// 2
+// 3
+// 4
+// 5
+
+// ======================================================
+//  LOOP THROUGH AN ARRAY
+// ======================================================
+
+const students = ["Affan", "Azan", "Ahmed", "Suffiyan"];
+
+// for (let i = 0; i < students.length; i++) {
+//   console.log(students[i]);
+// }
+
+students.forEach((singleStudent, index) => {
+  console.log(`student name is ${singleStudent} & array index is ${index}`);
+});
