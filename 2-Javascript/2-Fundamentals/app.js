@@ -363,6 +363,9 @@ console.log(randomNumber);
 // 18. STRINGS
 // ======================================================
 
+// ""
+// ''
+
 const firstName = "Muzammil";
 const lastName = "Mustaqeem";
 
@@ -682,3 +685,140 @@ const students = ["Affan", "Azan", "Ahmed", "Suffiyan"];
 students.forEach((singleStudent, index) => {
   console.log(`student name is ${singleStudent} & array index is ${index}`);
 });
+
+// ======================================================
+//  FOR...OF LOOP
+// ======================================================
+
+// for...of is a simple way to loop through arrays.
+
+const languages = ["Javascript", "Python", "Ai"];
+
+for (const language of languages) {
+  console.log(language);
+}
+
+/*
+Output
+Javascript
+Python
+Ai
+*/
+// ======================================================
+// WHILE LOOP
+// ======================================================
+
+let count = 1;
+
+while (count <= 5) {
+  console.log(count);
+  count++;
+  //count = count + 1
+}
+
+/*
+Output:
+1
+2
+3
+4
+5
+
+
+*/
+
+// ======================================================
+// DO...WHILE LOOP
+// ======================================================
+
+// do...while runs at least once.
+
+let number = 6;
+
+do {
+  console.log(number);
+  number++;
+} while (number <= 5);
+
+/*
+Output:
+6
+
+
+*/
+// ======================================================
+// BREAK AND CONTINUE
+// ======================================================
+
+// break stops the loop.
+
+//BREAK
+
+for (let i = 1; i <= 10; i++) {
+  if (i === 5) {
+    break;
+  }
+
+  console.log(i);
+}
+
+// output
+
+//1
+//2
+//3
+//4
+
+// break = khatam hogaya loop
+
+// CONTINUE
+
+// continue skips the current iteration.
+
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) {
+    continue;
+  }
+
+  console.log(i);
+}
+
+// output
+
+//1
+//2
+//4
+//5
+
+// ======================================================
+//  FOR...IN LOOP
+// ======================================================
+
+// for...in is commonly used to loop through object keys.
+
+const laptop2 = {
+  brand: "HP",
+  ram: "16GB",
+  storage: "512GB",
+};
+
+for (const key in laptop2) {
+  //key = brand
+  //key = ram
+  //key = storage
+  console.log(key, "key");
+  console.log(laptop2[key], "value");
+}
+
+/*
+Output:
+
+brand key
+HP value
+
+ram key
+16GB value
+
+storage key
+512GB value
+*/
